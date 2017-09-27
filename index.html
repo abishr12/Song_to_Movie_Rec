@@ -14,8 +14,9 @@
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
       <a id="logo-container" href="#" class="brand-logo">MovieMood</a>
+<!-- LOGIN SECTION START -->
       <ul class="right hide-on-med-and-down">
-        <!-- <li><a href="#">Navbar Link</a></li> -->
+        <li><a href="#">Login</a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
@@ -31,17 +32,19 @@
         <br><br>
         <h1 class="header center teal-text text-lighten-2">Get movie recommendations</h1>
         <div class="row center">
-          <h5 class="header col s12 light">based on the kind of songs you want to hear</h5>
+          <h5 class="header col s12 light">click on a mood button to generate your movie recommendation</h5>
         </div>
         <div class="row center">
           <p>
-            <div class="form-group">
-            <input type="text" class="form-control" id="input" placeholder="Type in a name of a song">
-            </div>
-          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Recommendations</a>
+          <a href="#" id="happy" class="btn-large waves-effect waves-light teal lighten-1">Happy</a>
+          <a href="#" id="emotional" class="btn-large waves-effect waves-light teal lighten-1">Emotional</a>
+          <a href="#" id="romantic" class="btn-large waves-effect waves-light teal lighten-1">Romantic</a>
+          <a href="#" id="thrilling" class="btn-large waves-effect waves-light teal lighten-1">Thrilling</a>
+          <a href="#" id="goofy" class="btn-large waves-effect waves-light teal lighten-1">Goofy</a>
+          <a href="#" id="powerful" class="btn-large waves-effect waves-light teal lighten-1">Powerful</a>
+
         </div>
         <br><br>
-
       </div>
     </div>
     <div class="parallax"><img src="search_backdrop.png" alt="Unsplashed background img 1"></div>
@@ -49,37 +52,12 @@
 
 
   <div class="container">
-    <div class="section">
+  </div>
 
       <!--   Icon Section   -->
       <div class="row" id="movie-posters">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="poster1"></i></h2>
-            <h5 class="center">Songs</h5>
-
-            <p class="light"><b>"On My Mind"</b> by Ellie Goulding<br><b>"Reaper"</b>by Sia<br><b>"Something Just Like This"</b> by The Chainsmokers & Coldplay</p>
-          </div>
+      <div class="movieInfo" id="dynamicInputs"></div>
         </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="poster2"></i></h2>
-            <h5 class="center">Songs</h5>
-
-            <p class="light"><b>"On My Mind"</b> by Ellie Goulding<br><b>"Reaper"</b>by Sia<br><b>"Something Just Like This"</b> by The Chainsmokers & Coldplay</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="poster3"></i></h2>
-            <h5 class="center">Songs</h5>
-
-            <p class="light"><b>"On My Mind"</b> by Ellie Goulding<br><b>"Reaper"</b>by Sia<br><b>"Something Just Like This"</b> by The Chainsmokers & Coldplay</p>
-          </div>
-        </div>
-      </div>
 
     </div>
   </div>
@@ -119,7 +97,7 @@
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
+    <div class="parallax"><img src="camera_banner.jpg" alt="Unsplashed background img 3"></div>
   </div>
 
   <footer class="page-footer teal">
@@ -164,6 +142,7 @@
 
   <!--  Scripts-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/jquery.smooth-scroll.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
