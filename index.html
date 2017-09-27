@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Movie Based on Mood</title>
+  <title>MovieMood</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -13,9 +13,10 @@
 <body>
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">Movies Based on Mood</a>
+      <a id="logo-container" href="#" class="brand-logo">MovieMood</a>
+<!-- LOGIN SECTION START -->
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
+        <li><a href="#">Login</a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
@@ -31,17 +32,19 @@
         <br><br>
         <h1 class="header center teal-text text-lighten-2">Get movie recommendations</h1>
         <div class="row center">
-          <h5 class="header col s12 light">based on your favorite songs</h5>
+          <h5 class="header col s12 light">click on a mood button to generate your movie recommendation</h5>
         </div>
         <div class="row center">
           <p>
-            <div class="form-group">
-            <input type="text" class="form-control" id="input" placeholder="type in your favorite song">
-            </div>
-          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
+          <a href="#" id="happy" class="btn-large waves-effect waves-light teal lighten-1">Happy</a>
+          <a href="#" id="emotional" class="btn-large waves-effect waves-light teal lighten-1">Emotional</a>
+          <a href="#" id="romantic" class="btn-large waves-effect waves-light teal lighten-1">Romantic</a>
+          <a href="#" id="thrilling" class="btn-large waves-effect waves-light teal lighten-1">Thrilling</a>
+          <a href="#" id="goofy" class="btn-large waves-effect waves-light teal lighten-1">Goofy</a>
+          <a href="#" id="powerful" class="btn-large waves-effect waves-light teal lighten-1">Powerful</a>
+
         </div>
         <br><br>
-
       </div>
     </div>
     <div class="parallax"><img src="search_backdrop.png" alt="Unsplashed background img 1"></div>
@@ -49,43 +52,18 @@
 
 
   <div class="container">
-    <div class="section">
+  </div>
 
       <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Speeds up development</h5>
-
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
-          </div>
+      <div class="row" id="movie-posters">
+      <div class="movieInfo" id="dynamicInputs"></div>
         </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">User Experience Focused</h5>
-
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Easy to work with</h5>
-
-            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
-          </div>
-        </div>
-      </div>
 
     </div>
   </div>
 
 
-  <!-- <div class="parallax-container valign-wrapper">
+  <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
@@ -108,7 +86,7 @@
       </div>
 
     </div>
-  </div> -->
+  </div>
 
 
   <div class="parallax-container valign-wrapper">
@@ -119,7 +97,7 @@
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
+    <div class="parallax"><img src="camera_banner.jpg" alt="Unsplashed background img 3"></div>
   </div>
 
   <footer class="page-footer teal">
@@ -163,7 +141,8 @@
 
 
   <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/jquery.smooth-scroll.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
   <script type="text/javascript" src="js/script.js"></script>

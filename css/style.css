@@ -55,3 +55,136 @@ p {
 footer.page-footer {
   margin: 0;
 }
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+*:focus {
+	outline:none;
+}
+html {
+	max-width: 100%;
+	overflow-x: hidden;
+}
+.movieInfo{
+	font-size:15px;
+
+}
+
+.wrapper {
+	height:100vh;
+	background-image: url(assets/herovader.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-attachment: fixed;
+	background-position: center center;
+	color: white;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	display:flex;
+	flex-direction: column;
+	-ms-align-items: center;
+	align-items: center;
+	text-align: center;
+	font-size: 16px;
+
+}
+.wrapper img {
+	width:350px;
+	margin-bottom: 60px;
+}
+.wrapper i {
+	font-size: 50px;
+	margin-top: 270px;
+	color: orangered;
+
+}
+
+.btn:hover, .btn-large:hover {
+  color: hotpink;
+}
+
+body select option {
+ padding: 0 4px;
+}
+.flickity-cell {
+	min-width:20%;
+	text-align: center;
+	margin:20px;
+}
+.movieInfo {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	-o-flex-direction: row;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+.flickity-cell:hover p {
+	display:block;
+}
+.flickity-cell{
+	position: relative;
+}
+.flickity-cell img:hover {
+	filter: brightness(30%);
+
+}
+.flickity-cell p {
+	width:270px;
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	color:white;
+	display:none;
+}
+.flickity-cell .synopsisContainer:hover img {
+	filter: brightness(30%);
+
+}
+@media only screen and (max-width: 940px) {
+
+	form label {
+		font-size:20px;
+	}
+	form button {
+		font-size: 14px;
+	}
+	form {
+		padding-top:200px;
+		line-height:40px;
+	}
+
+
+}
+@media only screen and (max-width: 480px) {
+	.info {
+		display:none;
+	}
+}
+
+
+
+
+@media only screen and (max-width: 400px) {
+	.info {
+		display:none;
+	}
+	.wrapper i {
+		position: relative;
+		bottom:100px;
+	}
+	form {
+		padding-top:200px;
+		line-height:40px;
+	}
+
+	}
